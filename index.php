@@ -1,8 +1,22 @@
+<!doctype html> 
+	<html>
+		<head> 
+			<meta charset="utf-8">
+			
+		</head> 
+
+
+<form action="script-captchas.php method="post">
+<label for="captcha"> Veuillez saisir le code de s√©curit√©! </label>
+
+
 <?php
-
+session_start();
 /* SCRIPT FRONTAL AFFICHAGE DE CAPTCHA
-* AFFICHER UNE IMAGE G…N…R…E EN PHP */
-
+* AFFICHER UNE IMAGE G√âN√âR√âE EN PHP */
 echo "<img src='script-captchas.php' alt='captchas' />";
-
 ?>
+
+<input type="text" id="captcha" name="captcha"> </input>
+<input type="submit" id="submit" name="VALIDER"> </input>
+</html>
